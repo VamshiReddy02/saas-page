@@ -1,3 +1,4 @@
+import Features from "./sections/Features"
 import Hero from "./sections/Hero"
 import Introduction from "./sections/Introduction"
 import LogoTicker from "./sections/LogoTicker"
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <LogoTicker />
       <Introduction />
+      <Features />
     </>
   )
 }
