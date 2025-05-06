@@ -1,9 +1,10 @@
 import React from 'react'
+import { twMerge } from 'tailwind-merge';
 
-const FeatureCard = (props: {title: string; description: string; children?: React.ReactNode}) => {
-    const { title, description, children } = props
+const FeatureCard = (props: {title: string; description: string; children?: React.ReactNode; className?: string;}) => {
+    const { title, description, children, className } = props
   return (
-        <div className='bg-neutral-900 border border-white/10 p-6 rounded-3xl '>
+        <div className={twMerge('bg-neutral-900 border border-white/10 p-6 rounded-3xl', className)}>
             <div className='aspect-video'>
                 {children}
             </div>

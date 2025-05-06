@@ -4,6 +4,7 @@ import avatar1 from '../assets/images/avatar-ashwin-santiago.jpg'
 import avatar2 from '../assets/images/avatar-florence-shaw.jpg'
 import avatar3 from '../assets/images/avatar-lula-meyers.jpg'
 import Avatar from '../components/Avatar';
+import Key from '../components/Key';
 
 const features = [
     "Asset Library",
@@ -22,13 +23,14 @@ const Features = () => {
             <div className='flex justify-center'>
                 <Tag>Features</Tag>
             </div>
-            <h2 className='text-6xl font-medium text-center mt-6'>
+            <h2 className='text-6xl font-medium text-center mt-6 max-w-2xl mx-auto'>
                 Where power meets <span className='text-lime-400'>simplicity</span>
             </h2>
-            <div className='mt-12 grid grid-cols-1 gap-8'>
+            <div className='mt-12 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3 gap-8'>
                 <FeatureCard 
                     title='Real-time collaboration' 
-                    description='Work togather seamlessly with conflict-free team editing '
+                    description='Work togather seamlessly with conflict-free team editing'
+                    className='md:col-span-2 lg:col-span-1'
                 >
                     <div className='aspect-video flex items-center justify-center'>
                         <Avatar className='z-40'>
@@ -52,6 +54,7 @@ const Features = () => {
                 <FeatureCard 
                     title='Interactive Prototyping' 
                     description='Engage your clients with Prototyping that reacts to user actions'
+                    className='md:col-span-2 lg:col-span-1'
                 >
                     <div className='aspect-video flex items-center justify-center'>
                         <p className='text-4xl font-extrabold text-white/20 text-center'>
@@ -59,19 +62,24 @@ const Features = () => {
                         </p>
                     </div>
                 </FeatureCard>
-                <div>
-                    <div></div>
-                    <div>
-                        <h3>Keyboard Quick Actions</h3>
-                        <p>Powerfull commands to help you create designs more quickly</p>
-                    </div>
-                </div>
+                <FeatureCard 
+                    title='Keyboard Quick Actions' 
+                    description='Powerfull commands to help you create designs more quickly'
+                    className='md:col-span-2 md:col-start-2 lg:col-span-1 lg:col-start-auto'
+                >
+                   <div className='aspect-video flex items-center justify-center gap-4'>
+                        <Key className='w-28'>shift</Key>
+                        <Key>alt</Key>
+                        <Key>C</Key>
+                    </div> 
+                </FeatureCard>
             </div>
-            <div>
+            <div className='mt-8 flex flex-wrap gap-3 justify-center'>
                 {features.map(feature => (
-                    <div key={feature}>
-                        <span></span>
-                        <span>{feature}</span>
+                    <div key={feature} 
+                        className='bg-neutral-950 border border-white/10 inline-flex px-3 md:px-5 py-1.5 md:py-2 rounded-2xl gap-3 items-center'>
+                        <span className='bg-lime-400 text-neutral-950 size-5 rounded-full inline-flex items-center justify-center text-xl'>&#10038;</span>
+                        <span className='font-medium md:text-lg'>{feature}</span>
                     </div>
                 ))}
             </div>
