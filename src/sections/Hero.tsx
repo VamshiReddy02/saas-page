@@ -1,17 +1,45 @@
 import Button from "../components/Button"
 import designImage1 from "../assets/images/design-example-1.png"
 import designImage2 from "../assets/images/design-example-2.png"
+import { motion, useAnimate } from "framer-motion"
+import { useEffect } from "react"
+import curserYou from "../assets/images/cursor-you.svg"
 
 const Hero = () => {
+    const [leftDesignScope, leftDesignAnimate] = useAnimate();
+    const [rightDesignScope, rightDesignAnimate] = useAnimate();
+
+    useEffect(() => {
+        leftDesignAnimate([
+            [leftDesignScope.current, { opacity: 1}, { duration: 0.5 }],
+            [leftDesignScope.current, { y: 0, x: 0}, { duration: 0.5 }]
+        ])
+
+        rightDesignAnimate([
+            [rightDesignScope.current, { opacity: 1}, { duration: 0.5, delay: 1}],
+            [rightDesignScope.current, { x: 0, y: 0}, { duration: 0.5}]
+        ])
+    }, [])
   return (
-    <section className="py-24 overflow-x-clip">
+    <section className="py-24 overflow-x-clip" style={{
+        cursor: `url(${curserYou}), auto`,
+      }}>
         <div className="container relative">
-            <div className="absolute -left-32 top-16 hidden lg:block">
-                <img src={designImage1} alt="" />
-            </div>
-            <div className="absolute -right-64 -top-16 hidden lg:block">
-                <img src={designImage2} alt="" />
-            </div>
+            <motion.div 
+                ref={leftDesignScope} 
+                initial = {{ opacity: 0, y: 100, x: -100 }}
+                drag
+                className="absolute -left-32 top-16 hidden lg:block"
+                >
+                <img src={designImage1} alt="" draggable="false" />
+            </motion.div>
+            <motion.div
+                ref={rightDesignScope} 
+                initial = {{ opacity: 0, x:100, y: 100}}
+                drag
+                className="absolute -right-64 -top-16 hidden lg:block">
+                <img src={designImage2} alt="" draggable="false" />
+            </motion.div>
             <div className="flex justify-center">
                 <div className="inline-flex py-1 px-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full text-neutral-950 font-semibold">$7.5M seed round raised</div>
             </div>

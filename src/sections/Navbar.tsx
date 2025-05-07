@@ -1,6 +1,7 @@
 import logoImage from '../assets/images/logo.svg'
 import { IoMenu } from "react-icons/io5"
 import Button from '../components/Button'
+import { AnimatePresence, motion } from 'framer-motion'
 
 const navLinks = [
   { label: "Home", href: "#" },
@@ -11,9 +12,9 @@ const navLinks = [
 
 const Navbar = () => {
   return (
-    <section className="py-4 lg:py-8">
+    <section className="py-4 lg:py-8 sticky top-0 z-50">
       <div className="container max-w-5xl">
-        <div className="grid grid-cols-2 lg:grid-cols-3 border border-white/15 rounded-full p-4 md:pr-2 items-center">
+        <div className="grid grid-cols-2 lg:grid-cols-3 border border-white/15 rounded-full p-4 md:pr-2 items-center bg-neutral-950/70 backdrop-blur">
           
           <div>
             <img src={logoImage} alt="Logo" className="h-9 md:h-auto w-auto" />
