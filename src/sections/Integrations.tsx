@@ -27,7 +27,7 @@ const Integrations = () => {
                 <div>
                     <Tag>Integrations</Tag>
                     <h2 className="text-6xl font-medium mt-6">
-                         well with <span className="text-lime-400">Others</span>
+                         Plays well with <span className="text-blue-300">Others</span>
                     </h2>
 
                     <p className="text-white/50 mt-4 text-lg">

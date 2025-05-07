@@ -36,7 +36,7 @@ const Faqs = () => {
                 <Tag>Faqs</Tag>
             </div>
             <h2 className='text-6xl font-medium mt-6 text-center max-w-xl mx-auto'>
-                Questions? We've got <span className='text-lime-400'>answers</span>
+                Questions? We've got <span className='text-blue-400'>answers</span>
             </h2>
             <div className='mt-12 flex flex-col gap-6 max-w-xl mx-auto'>
                 {faqs.map((faq, faqIndex) => (
@@ -45,7 +45,7 @@ const Faqs = () => {
                         onClick={() => setSelectedIndex(faqIndex)}>
                         <div className='flex justify-between items-center'>
                             <h3 className='font-medium'>{faq.question}</h3>
-                            <FaPlus className={twMerge('text-lime-400 flex-shrink-0 transition duration-300', selectedIndex == faqIndex && "rotate-45")} />
+                            <FaPlus className={twMerge('text-blue-600 flex-shrink-0 transition duration-300', selectedIndex == faqIndex && "rotate-45")} />
                         </div>
                         <AnimatePresence>
                         { selectedIndex === faqIndex && (

@@ -1,4 +1,4 @@
-import { useMotionValueEvent, useScroll, useTransform } from 'framer-motion';
+import { useScroll, useTransform } from 'framer-motion';
 import Tag from '../components/Tag';
 import { useEffect, useRef, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
@@ -33,7 +33,7 @@ const Introduction = () => {
                       <span key={wordIndex} className={twMerge("transition duration-500 text-white/15" ,wordIndex < currentWord && "text-white")}>{`${word} `}</span>
                     ))} 
                   </span>
-                  <span className='text-lime-400 block'>That&apos;s why we built Layers.</span>
+                  <span className='text-blue-300 block'>That&apos;s why we built Layers.</span>
               </div>
             </div>
             <div className='h-[150vh]' ref={scollTarget}></div>

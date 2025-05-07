@@ -1,7 +1,6 @@
-import logoImage from '../assets/images/logo.svg'
+import logoImage from '../assets/images/logo.gif'
 import { IoMenu } from "react-icons/io5"
 import Button from '../components/Button'
-import { AnimatePresence, motion } from 'framer-motion'
 
 const navLinks = [
   { label: "Home", href: "#" },
