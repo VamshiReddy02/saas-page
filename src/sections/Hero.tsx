@@ -20,7 +20,6 @@ const Hero = () => {
             [rightDesignScope.current, { x: 0, y: 0}, { duration: 0.5}]
         ])
     }, [])
-    console.log(curserYou);
   return (
     <section className="py-24 overflow-x-clip" style={{
         cursor: `url(${curserYou}), auto`,
