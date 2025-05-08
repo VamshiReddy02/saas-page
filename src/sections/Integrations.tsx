@@ -31,7 +31,7 @@ const Integrations = () => {
                     </h2>
 
                     <p className="text-white/50 mt-4 text-lg">
-                        Layers seamlessly connects with your fav tools. making 
+                        Tez seamlessly connects with your fav tools. making 
                         it easy to plug into any workflow and collaboration across platforms.
                     </p>
                 </div>

@@ -1,39 +1,39 @@
-import darkSaasLandingPage from "../assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "../assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "../assets/images/ai-startup-landing-page.png";
+import ai1 from "../assets/images/ai1.gif";
+import ai2 from "../assets/images/ai2.gif";
+import ai3 from "../assets/images/ai3.gif";
 import Tag from "../components/Tag";
 import Button from "../components/Button";
 
 const toolFeatures = [
     {
-      company: "CodeSmith AI",
+      company: "Tez AI",
       title: "Real-time Code Autocompletion",
       results: [
         { title: "Increased developer productivity by 60%" },
         { title: "Reduced syntax errors by 45%" },
         { title: "Supports 20+ programming languages seamlessly" },
       ],
-      image: darkSaasLandingPage,
+      image: ai2,
     },
     {
-      company: "DevPilot",
+      company: "TezPilot",
       title: "AI-Powered Debugging",
       results: [
         { title: "Identifies bugs in real-time with 85% accuracy" },
         { title: "Suggests optimized fixes instantly" },
         { title: "Integrates with popular IDEs like VSCode & JetBrains" },
       ],
-      image: lightSaasLandingPage,
+      image: ai1,
     },
     {
-      company: "NextGen IDE",
+      company: "Tez IDE",
       title: "Natural Language to Code",
       results: [
         { title: "Transforms plain English into functional code blocks" },
         { title: "Boosts rapid prototyping speed by 70%" },
         { title: "Understands complex multi-step prompts" },
       ],
-      image: aiStartupLandingPage,
+      image: ai3,
     },
   ];
   
