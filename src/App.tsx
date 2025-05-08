@@ -1,6 +1,8 @@
+import About from "./sections/About"
 import CallToAction from "./sections/CallToAction"
 import Faqs from "./sections/Faqs"
 import Features from "./sections/Features"
+import FeaturesCards from "./sections/FeaturesCards"
 import Footer from "./sections/Footer"
 import Hero from "./sections/Hero"
 import Integrations from "./sections/Integrations"
@@ -15,8 +17,8 @@ function App() {
       <Navbar />
       <Hero />
       <LogoTicker />
-      <Introduction />
-      <Features />
+      <About />
+      <FeaturesCards />
       <Integrations />
       <Faqs />
       <CallToAction />

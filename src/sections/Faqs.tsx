@@ -6,26 +6,32 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 const faqs = [
     {
-        question: "How is Layers different from other design tools?",
-        answer: "Unlike traditional design tools, Layers prioritizes speed and simplicity without sacrificing power. Our intelligent interface adapts to your workflow, reducing clicks and keeping you in your creative flow.",
+      question: "How is the TEZ AI Code Editor different from traditional IDEs?",
+      answer:
+        "Unlike traditional IDEs, our AI Code Editor leverages machine learning to provide intelligent code suggestions, automated debugging, and real-time performance insights, streamlining your development process.",
     },
     {
-        question: "Is there a learning curve?",
-        answer: "Layers is designed to feel intuitive from day one. Most designers are productive within hours, not weeks. We also provide interactive tutorials and comprehensive documentation to help you get started.",
+      question: "Does the AI Editor support multiple programming languages?",
+      answer:
+        "Absolutely! The editor supports 30+ programming languages including JavaScript, Python, Go, Rust, Java, and more. We’re constantly adding new language support based on developer feedback.",
     },
     {
-        question: "How do you handle version control?",
-        answer: "Every change in Layers is automatically saved and versioned. You can review history, restore previous versions, and create named versions for important milestones.",
+      question: "How secure is my code when using the AI features?",
+      answer:
+        "Security is our top priority. All code analysis and AI suggestions are processed locally or over secure, encrypted channels. We never store your code without your permission.",
     },
     {
-        question: "Can I work offline?",
-        answer: "Yes! Layers includes a robust offline mode. Changes sync automatically when you're back online, so you can keep working anywhere.",
+      question: "Can I customize the AI suggestions?",
+      answer:
+        "Yes! You can fine-tune AI behavior to match your coding style, disable specific suggestions, and even train custom models for your team’s coding standards.",
     },
     {
-        question: "How does Layers handle collaboration?",
-        answer: "Layers is built for collaboration. You can invite team members to your projects, share feedback, and work together in real-time.",
+      question: "Does it integrate with my existing tools?",
+      answer:
+        "Our AI Editor integrates seamlessly with popular tools like GitHub, GitLab, Jira, Slack, and CI/CD pipelines, so you can keep your workflow smooth and connected.",
     },
-];
+  ];
+  
 
 const Faqs = () => {
     const [selectedIndex, setSelectedIndex] = useState(0);
