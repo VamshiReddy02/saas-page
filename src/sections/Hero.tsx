@@ -1,8 +1,4 @@
 import Button from "../components/Button"
-import designImage1 from "../assets/images/design-example-1.png"
-import designImage2 from "../assets/images/design-example-2.png"
-import { motion, useAnimate } from "framer-motion"
-import { useEffect } from "react"
 import curserYou from "../assets/images/cursor-you.svg"
 
 const Hero = () => {
